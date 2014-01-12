@@ -1,14 +1,16 @@
 DropwizardAssets
 ================
 
-You might want to serve some static content, and keep it seperate from the jar so that you don't have to build it everytime you makes changes to these static files.
+You might want to serve some static content with Dropwizard. You may want to keep this content separate from the jar so that you don't have to build the entire project everytime you makes changes to these static files.
 
-One use case might be having a rest api being served by Dropwizard. You develop a console and want it to be served by the same jetty container. You can do this by using this plugin:
+One use case might be having a rest api being served by Dropwizard. Now, you develop a console over it and want it to be served by the same jetty container. 
+
+You can do this by using this plugin:
 https://github.com/bazaarvoice/dropwizard-configurable-assets-bundle
 
 A lot of people had difficulty using this plugin so on request, here is a sample project that serves static content outside the jar with Dropwizard.
 
-Example: 
+To see this in action: 
 
 1) Run "mvn package"
 2) Run "java -jar target/DropwizardAssets-1.0-SNAPSHOT.jar server config/assets-example.yml"
