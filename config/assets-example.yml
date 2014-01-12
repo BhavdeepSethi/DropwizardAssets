@@ -1,0 +1,9 @@
+http:
+    rootPath: /v1/*
+template: Hello, %s!
+defaultName: Stranger
+
+
+assets:
+  overrides:
+    /sample: /var/www/
